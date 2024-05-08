@@ -1,15 +1,18 @@
 {
   "package_lists": [
     {
-      "name": "All",
+      "id": "all",
+      "name": "All packages",
       "file_name": "package-lists/all.json"
     },
     {
-      "name": "Apple",
+      "id": "apple",
+      "name": "Apple packages",
       "file_name": "package-lists/apple.json"
     },
     {
-      "name": "SSWG",
+      "id": "sswg",
+      "name": "SSWG incubated packages",
       "file_name": "package-lists/sswg.json"
     },
   ],

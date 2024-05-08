@@ -10,6 +10,7 @@ struct Analysis: Codable {
     }
 
     struct PackageList: Codable {
+        var id: String
         var name: String
         var fileName: String
     }
@@ -66,10 +67,10 @@ extension Analysis {
         try Self.decoder.decode(Analysis.self, from: try Data(contentsOf: .init(relativePath: path)))
     }
 
-    func loadPackageLists() throws -> [(name: String, packages: [Package])] {
+    func loadPackageLists() throws -> [(id: String, name: String, packages: [Package])] {
         try packageLists.map {
             let packages = try Self.decoder.decode([Package].self, from: try Data(contentsOf: .init(relativePath: $0.fileName)))
-            return ($0.name, packages)
+            return ($0.id, $0.name, packages)
         }
     }
 
@@ -96,10 +97,10 @@ extension [Analysis.Record] {
 }
 
 
-extension Array<(name: String, packages: [Analysis.Package])> {
-    subscript(name: String) -> [Analysis.Package]? {
-        for item in self {
-            if item.name == name { return item.packages }
+extension Array<(id: String, name: String, packages: [Analysis.Package])> {
+    subscript(id id: String) -> Element? {
+        for element in self {
+            if element.id == id { return element }
         }
         return nil
     }

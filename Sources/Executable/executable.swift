@@ -19,26 +19,34 @@ struct S6Analysis: ParsableCommand {
         // - join all package list with results
         // - get total error count (get the max across platforms)
 
-        var allOutput = [Analysis.Output]()
+        var errorCountOutput = [Analysis.Output]()
         do {
             print("all packages...")
-            guard let selectedPackages = packageLists["All"] else {
+            guard let packageList = packageLists[id: "all"] else {
                 fatalError("Package list 'All' not found")
             }
-            var output = Analysis.Output(id: "all", name: "All packages", values: [])
+            var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
             for (date, results) in records {
                 print("date:", date, results.count)
-                let selectetResults = results.filter(by: selectedPackages)
+                let selectetResults = results.filter(by: packageList.packages)
                 print("selected results:", selectetResults.count)
                 let errorTotal = selectetResults.errorTotal()
                 print("errorTotal:", errorTotal)
                 output.values.append(.init(date: date, value: errorTotal))
             }
-            allOutput.append(output)
+            errorCountOutput.append(output)
         }
-        let encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted
-        let data = try encoder.encode(allOutput)
+
+        let data = try encoder.encode(errorCountOutput)
         try data.write(to: URL(relativePath: "out-errors.json"))
+    }
+}
+
+
+extension S6Analysis {
+    var encoder: JSONEncoder {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        return encoder
     }
 }
