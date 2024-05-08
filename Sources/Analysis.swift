@@ -22,8 +22,10 @@ struct Analysis: Codable {
 
 
     struct Record: Codable {
+        var id: UUID
         var url: String
         var status: Status
+        var platform: String
         var swift6Errors: String?
         var logUrl: String?
         var jobUrl: String
@@ -43,6 +45,21 @@ struct Analysis: Codable {
         return decoder
     }
 }
+
+
+extension Analysis {
+    struct Output: Codable {
+        var id: String
+        var name: String
+        var values: [Value]
+
+        struct Value: Codable {
+            var date: String
+            var value: Int
+        }
+    }
+}
+
 
 extension Analysis {
     static func load(relativePath path: String) throws -> Self {
@@ -65,3 +82,21 @@ extension Analysis {
 }
 
 
+extension Array<(name: String, packages: [Analysis.Package])> {
+    subscript(name: String) -> [Analysis.Package]? {
+        for item in self {
+            if item.name == name { return item.packages }
+        }
+        return nil
+    }
+}
+
+
+extension Dictionary<UUID, [Analysis.Record]> {
+    func maxErrors(packageId: UUID) -> Int? {
+        guard let records = self[packageId] else { return nil }
+        let errors = records.compactMap(\.swift6Errors).compactMap(Int.init)
+        guard !errors.isEmpty else { return nil }
+        return errors.max()
+    }
+}
