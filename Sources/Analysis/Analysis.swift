@@ -94,6 +94,12 @@ extension [Analysis.Record] {
         let maxErrors = grouped.keys.compactMap { grouped.maxErrors(packageId: $0) }
         return maxErrors.reduce(0, +)
     }
+
+    func passingTotal() -> Int {
+        let grouped = Dictionary(grouping: self) { $0.id }
+        let passing = grouped.keys.filter { grouped.isPassing(packageId: $0) }
+        return passing.count
+    }
 }
 
 
@@ -113,5 +119,11 @@ extension Dictionary<UUID, [Analysis.Record]> {
         let errors = records.compactMap(\.swift6Errors).compactMap(Int.init)
         guard !errors.isEmpty else { return nil }
         return errors.max()
+    }
+
+    func isPassing(packageId: UUID) -> Bool {
+        guard let records = self[packageId] else { return false }
+        let buildsWithoutErrors = records.compactMap(\.swift6Errors).compactMap(Int.init).filter { $0 == 0 }
+        return buildsWithoutErrors.isEmpty == false
     }
 }

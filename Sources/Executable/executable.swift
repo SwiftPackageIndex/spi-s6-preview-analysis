@@ -16,6 +16,7 @@ struct S6Analysis: ParsableCommand {
 
         do {  // Analyse total error count
             print("Analysing total error count ...\n")
+
             var errorCountOutput = [Analysis.Output]()
             for listId in ["all", "apple", "sswg"] {
                 print("Analysing '\(listId)' packages...")
@@ -37,6 +38,32 @@ struct S6Analysis: ParsableCommand {
 
             let data = try encoder.encode(errorCountOutput)
             try data.write(to: URL(relativePath: "rfs6-errors.json"))
+        }
+
+        do {  // Analyse packages without errors
+            print("Analysing packages without errors ...\n")
+
+            var passingOutput = [Analysis.Output]()
+            for listId in ["all", "apple", "sswg"] {
+                print("Analysing '\(listId)' packages...")
+                guard let packageList = packageLists[id: listId] else {
+                    fatalError("Package list '\(listId)' not found")
+                }
+                var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
+                for (date, results) in records {
+                    print("date:", date, results.count)
+                    let selectetResults = results.filter(by: packageList.packages)
+                    print("selected results:", selectetResults.count)
+                    let passingTotal = selectetResults.passingTotal()
+                    print("passingTotal:", passingTotal)
+                    output.values.append(.init(date: date, value: passingTotal))
+                }
+                passingOutput.append(output)
+                print()
+            }
+
+            let data = try encoder.encode(passingOutput)
+            try data.write(to: URL(relativePath: "rfs6-packages.json"))
         }
     }
 }
