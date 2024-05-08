@@ -38,7 +38,7 @@ struct S6Analysis: ParsableCommand {
         }
 
         let data = try encoder.encode(errorCountOutput)
-        try data.write(to: URL(relativePath: "out-errors.json"))
+        try data.write(to: URL(relativePath: "rfs6-errors.json"))
     }
 }
 
