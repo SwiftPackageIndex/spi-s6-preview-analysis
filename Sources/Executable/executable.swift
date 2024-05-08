@@ -30,9 +30,7 @@ struct S6Analysis: ParsableCommand {
                 print("date:", date, results.count)
                 let selectetResults = results.filter(by: selectedPackages)
                 print("selected results:", selectetResults.count)
-                let grouped = Dictionary(grouping: selectetResults) { $0.id }
-                let maxErrors = grouped.keys.compactMap { grouped.maxErrors(packageId: $0) }
-                let errorTotal = maxErrors.reduce(0, +)
+                let errorTotal = selectetResults.errorTotal()
                 print("errorTotal:", errorTotal)
                 output.values.append(.init(date: date, value: errorTotal))
             }
@@ -44,8 +42,3 @@ struct S6Analysis: ParsableCommand {
         try data.write(to: URL(relativePath: "out-errors.json"))
     }
 }
-
-
-//extension UUID {
-//    static let swiftArgumentParser = UUID(uuidString: "112bdd86-7bbb-490f-9484-bd4020ed5a50")!
-//}

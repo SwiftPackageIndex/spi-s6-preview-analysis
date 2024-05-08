@@ -87,6 +87,12 @@ extension [Analysis.Record] {
         let isIncluded = Set(packages.map(\.id))
         return filter { isIncluded.contains($0.id) }
     }
+
+    func errorTotal() -> Int {
+        let grouped = Dictionary(grouping: self) { $0.id }
+        let maxErrors = grouped.keys.compactMap { grouped.maxErrors(packageId: $0) }
+        return maxErrors.reduce(0, +)
+    }
 }
 
 

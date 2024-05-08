@@ -4,6 +4,7 @@ import XCTest
 
 
 class AnalysisTests: XCTestCase {
+
     func test_Array_filter_packages() throws {
         do {
             let results: [Analysis.Record] = [.init(id: .id0), .init(id: .id1)]
@@ -32,6 +33,16 @@ class AnalysisTests: XCTestCase {
         XCTAssertEqual(results.maxErrors(packageId: .id1), nil)
         XCTAssertEqual(results.maxErrors(packageId: .id2), 3)
     }
+
+    func test_errorTotal() throws {
+        let results: [Analysis.Record] = [
+            .init(id: .id0, errorCount: 1), .init(id: .id0, errorCount: 2),
+            .init(id: .id1, errorCount: nil),
+            .init(id: .id2, errorCount: nil), .init(id: .id2, errorCount: 3),
+        ]
+        XCTAssertEqual(results.errorTotal(), 5)
+    }
+
 }
 
 
