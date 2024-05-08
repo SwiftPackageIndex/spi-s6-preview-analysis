@@ -20,9 +20,9 @@ struct S6Analysis: ParsableCommand {
         // - get total error count (get the max across platforms)
 
         var errorCountOutput = [Analysis.Output]()
-        do {
+        for listId in ["all", "apple", "sswg"] {
             print("all packages...")
-            guard let packageList = packageLists[id: "all"] else {
+            guard let packageList = packageLists[id: listId] else {
                 fatalError("Package list 'All' not found")
             }
             var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
