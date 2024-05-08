@@ -17,6 +17,7 @@ let package = Package(
             ],
             path: "Sources/Executable"
         ),
-        .target(name: "Analysis")
+        .target(name: "Analysis"),
+        .testTarget(name: "AnalysisTests", dependencies: ["Analysis"])
     ]
 )
