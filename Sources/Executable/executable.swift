@@ -15,11 +15,12 @@ struct S6Analysis: ParsableCommand {
         let records = try analysis.loadRecords()
 
         do {  // Analyse total error count
+            print("Analysing total error count ...\n")
             var errorCountOutput = [Analysis.Output]()
             for listId in ["all", "apple", "sswg"] {
-                print("all packages...")
+                print("Analysing '\(listId)' packages...")
                 guard let packageList = packageLists[id: listId] else {
-                    fatalError("Package list 'All' not found")
+                    fatalError("Package list '\(listId)' not found")
                 }
                 var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
                 for (date, results) in records {
@@ -31,6 +32,7 @@ struct S6Analysis: ParsableCommand {
                     output.values.append(.init(date: date, value: errorTotal))
                 }
                 errorCountOutput.append(output)
+                print()
             }
 
             let data = try encoder.encode(errorCountOutput)
