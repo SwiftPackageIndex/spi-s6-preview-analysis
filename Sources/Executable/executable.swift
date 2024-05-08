@@ -1,5 +1,7 @@
 import ArgumentParser
 import Foundation
+// FIXME: temporary hack until the API has settled
+@testable import Analysis
 
 
 @main
@@ -45,3 +47,6 @@ struct S6Analysis: ParsableCommand {
 }
 
 
+//extension UUID {
+//    static let swiftArgumentParser = UUID(uuidString: "112bdd86-7bbb-490f-9484-bd4020ed5a50")!
+//}

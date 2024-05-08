@@ -9,8 +9,14 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.3.1"),  
     ],
     targets: [
-        .executableTarget(name: "spi-s6-preview-analysis", dependencies: [
-            .product(name: "ArgumentParser", package: "swift-argument-parser")
-        ]),
+        .executableTarget(
+            name: "spi-s6-preview-analysis",
+            dependencies: [
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                "Analysis"
+            ],
+            path: "Sources/Executable"
+        ),
+        .target(name: "Analysis")
     ]
 )
