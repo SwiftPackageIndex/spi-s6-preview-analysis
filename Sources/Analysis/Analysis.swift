@@ -82,6 +82,14 @@ extension Analysis {
 }
 
 
+extension [Analysis.Record] {
+    func filter(by packages: [Analysis.Package]) -> Self {
+        let isIncluded = Set(packages.map(\.id))
+        return filter { isIncluded.contains($0.id) }
+    }
+}
+
+
 extension Array<(name: String, packages: [Analysis.Package])> {
     subscript(name: String) -> [Analysis.Package]? {
         for item in self {

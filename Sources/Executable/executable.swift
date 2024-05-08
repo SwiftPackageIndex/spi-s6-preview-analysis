@@ -25,11 +25,10 @@ struct S6Analysis: ParsableCommand {
             guard let selectedPackages = packageLists["All"] else {
                 fatalError("Package list 'All' not found")
             }
-            let included = Set(selectedPackages.map(\.id))
             var output = Analysis.Output(id: "all", name: "All packages", values: [])
             for (date, results) in records {
                 print("date:", date, results.count)
-                let selectetResults = results.filter { included.contains($0.id) }
+                let selectetResults = results.filter(by: selectedPackages)
                 print("selected results:", selectetResults.count)
                 let grouped = Dictionary(grouping: selectetResults) { $0.id }
                 let maxErrors = grouped.keys.compactMap { grouped.maxErrors(packageId: $0) }

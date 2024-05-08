@@ -4,6 +4,24 @@ import XCTest
 
 
 class AnalysisTests: XCTestCase {
+    func test_Array_filter_packages() throws {
+        do {
+            let results: [Analysis.Record] = [.init(id: .id0), .init(id: .id1)]
+            let packages: [Analysis.Package] = [.init(id: .id1), .init(id: .id2)]
+            XCTAssertEqual(results.filter(by: packages).map(\.id), [.id1])
+        }
+        do {
+            let results: [Analysis.Record] = [.init(id: .id0), .init(id: .id1)]
+            let packages: [Analysis.Package] = []
+            XCTAssertEqual(results.filter(by: packages).map(\.id), [])
+        }
+        do {
+            let results: [Analysis.Record] = []
+            let packages: [Analysis.Package] = [.init(id: .id1), .init(id: .id2)]
+            XCTAssertEqual(results.filter(by: packages).map(\.id), [])
+        }
+    }
+
     func test_Array_maxErrors() throws {
         let results: [UUID: [Analysis.Record]] = [
             .id0: [.init(id: .id0, errorCount: 1), .init(id: .id0, errorCount: 2)],
@@ -24,8 +42,15 @@ extension UUID {
 }
 
 
-extension Analysis.Record {
-    init(id: UUID, errorCount: Int?) {
+private extension Analysis.Record {
+    init(id: UUID, errorCount: Int? = nil) {
         self.init(id: id, url: "", status: .ok, platform: "", swift6Errors: errorCount?.description, logUrl: nil, jobUrl: "")
+    }
+}
+
+
+private extension Analysis.Package {
+    init(id: UUID) {
+        self.init(id: id, lastCommit: "", spiUrl: "")
     }
 }
