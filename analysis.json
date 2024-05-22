@@ -18,14 +18,6 @@
   ],
   "result_files": [
     {
-      "date": "2024-03-19",
-      "file_name": "results/spi_dev-2024-03-19.json"
-    },
-    {
-      "date": "2024-04-06",
-      "file_name": "results/spi_dev-2024-04-06.json"
-    },
-    {
       "date": "2024-05-04",
       "file_name": "results/spi_dev-2024-05-04.json"
     },
