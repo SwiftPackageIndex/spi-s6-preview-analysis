@@ -1,12 +1,14 @@
 import Foundation
 
 struct Analysis: Codable {
-    var resultFiles: [ResultFile]
+    var runs: [RunInfo]
     var packageLists: [PackageList]
 
-    struct ResultFile: Codable {
+    struct RunInfo: Codable {
         var date: String
         var fileName: String
+        var toolchainId: String
+        var toolchainLabel: String
     }
 
     struct PackageList: Codable {
@@ -56,6 +58,8 @@ extension Analysis {
 
         struct Value: Codable {
             var date: String
+            var toolchainId: String
+            var toolchainLabel: String
             var value: Int
         }
     }
@@ -74,10 +78,10 @@ extension Analysis {
         }
     }
 
-    func loadRecords() throws -> [(date: String, records: [Record])] {
-        try resultFiles.map {
+    func loadRecords() throws -> [(run: RunInfo, records: [Record])] {
+        try runs.map {
             let records = try Self.decoder.decode([Record].self, from: try Data(contentsOf: .init(relativePath: $0.fileName)))
-            return ($0.date, records)
+            return ($0, records)
         }
     }
 }

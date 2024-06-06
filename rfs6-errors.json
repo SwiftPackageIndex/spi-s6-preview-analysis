@@ -5,14 +5,20 @@
     "values" : [
       {
         "date" : "2024-05-04",
+        "toolchainId" : "org.swift.600202404221a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-04-22 (a)",
         "value" : 56917
       },
       {
         "date" : "2024-05-19",
+        "toolchainId" : "org.swift.600202405141a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-14 (a)",
         "value" : 55304
       },
       {
         "date" : "2024-06-02",
+        "toolchainId" : "org.swift.600202405261a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-26 (a)",
         "value" : 53456
       }
     ]
@@ -23,14 +29,20 @@
     "values" : [
       {
         "date" : "2024-05-04",
+        "toolchainId" : "org.swift.600202404221a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-04-22 (a)",
         "value" : 1392
       },
       {
         "date" : "2024-05-19",
+        "toolchainId" : "org.swift.600202405141a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-14 (a)",
         "value" : 1416
       },
       {
         "date" : "2024-06-02",
+        "toolchainId" : "org.swift.600202405261a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-26 (a)",
         "value" : 1375
       }
     ]
@@ -41,14 +53,20 @@
     "values" : [
       {
         "date" : "2024-05-04",
+        "toolchainId" : "org.swift.600202404221a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-04-22 (a)",
         "value" : 567
       },
       {
         "date" : "2024-05-19",
+        "toolchainId" : "org.swift.600202405141a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-14 (a)",
         "value" : 881
       },
       {
         "date" : "2024-06-02",
+        "toolchainId" : "org.swift.600202405261a",
+        "toolchainLabel" : "Swift 6.0 Development Snapshot 2024-05-26 (a)",
         "value" : 878
       }
     ]
