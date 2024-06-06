@@ -24,13 +24,16 @@ struct S6Analysis: ParsableCommand {
                     fatalError("Package list '\(listId)' not found")
                 }
                 var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
-                for (date, results) in records {
-                    print("date:", date, results.count)
+                for (run, results) in records {
+                    print("date:", run.date, results.count)
                     let selectetResults = results.filter(by: packageList.packages)
                     print("selected results:", selectetResults.count)
                     let errorTotal = selectetResults.errorTotal()
                     print("errorTotal:", errorTotal)
-                    output.values.append(.init(date: date, value: errorTotal))
+                    output.values.append(.init(date: run.date,
+                                               toolchainId: run.toolchainId,
+                                               toolchainLabel: run.toolchainLabel,
+                                               value: errorTotal))
                 }
                 errorCountOutput.append(output)
                 print()
@@ -50,13 +53,16 @@ struct S6Analysis: ParsableCommand {
                     fatalError("Package list '\(listId)' not found")
                 }
                 var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
-                for (date, results) in records {
-                    print("date:", date, results.count)
+                for (run, results) in records {
+                    print("date:", run.date, results.count)
                     let selectetResults = results.filter(by: packageList.packages)
                     print("selected results:", selectetResults.count)
                     let passingTotal = selectetResults.passingTotal()
                     print("passingTotal:", passingTotal)
-                    output.values.append(.init(date: date, value: passingTotal))
+                    output.values.append(.init(date: run.date,
+                                               toolchainId: run.toolchainId,
+                                               toolchainLabel: run.toolchainLabel,
+                                               value: passingTotal))
                 }
                 passingOutput.append(output)
                 print()
