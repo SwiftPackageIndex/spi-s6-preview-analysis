@@ -54,6 +54,7 @@ extension Analysis {
     struct Output: Codable {
         var id: String
         var name: String
+        var total: Int
         var values: [Value]
 
         struct Value: Codable {
