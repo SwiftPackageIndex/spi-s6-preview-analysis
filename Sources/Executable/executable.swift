@@ -26,9 +26,9 @@ struct S6Analysis: ParsableCommand {
                 var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
-                    let selectetResults = results.filter(by: packageList.packages)
-                    print("selected results:", selectetResults.count)
-                    let errorTotal = selectetResults.errorTotal()
+                    let selectedResults = results.filter(by: packageList.packages)
+                    print("selected results:", selectedResults.count)
+                    let errorTotal = selectedResults.errorTotal()
                     print("errorTotal:", errorTotal)
                     output.values.append(.init(date: run.date,
                                                toolchainId: run.toolchainId,
@@ -55,9 +55,9 @@ struct S6Analysis: ParsableCommand {
                 var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
-                    let selectetResults = results.filter(by: packageList.packages)
-                    print("selected results:", selectetResults.count)
-                    let passingTotal = selectetResults.passingTotal()
+                    let selectedResults = results.filter(by: packageList.packages)
+                    print("selected results:", selectedResults.count)
+                    let passingTotal = selectedResults.passingTotal()
                     print("passingTotal:", passingTotal)
                     output.values.append(.init(date: run.date,
                                                toolchainId: run.toolchainId,
