@@ -23,7 +23,7 @@ struct S6Analysis: ParsableCommand {
                 guard let packageList = packageLists[id: listId] else {
                     fatalError("Package list '\(listId)' not found")
                 }
-                var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
+                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageList.packages.count, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
                     let selectedResults = results.filter(by: packageList.packages)
@@ -52,7 +52,7 @@ struct S6Analysis: ParsableCommand {
                 guard let packageList = packageLists[id: listId] else {
                     fatalError("Package list '\(listId)' not found")
                 }
-                var output = Analysis.Output(id: packageList.id, name: packageList.name, values: [])
+                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageList.packages.count, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
                     let selectedResults = results.filter(by: packageList.packages)
