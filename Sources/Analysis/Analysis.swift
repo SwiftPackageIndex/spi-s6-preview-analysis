@@ -18,15 +18,13 @@ struct Analysis: Codable {
     }
 
     struct Package: Codable {
-        var id: UUID
         var lastCommit: String
-        var spiUrl: String
+        var url: URL
     }
 
 
     struct Record: Codable {
-        var id: UUID
-        var url: String
+        var url: URL
         var status: Status
         var platform: String
         var swift6Errors: String?
@@ -90,19 +88,19 @@ extension Analysis {
 
 extension [Analysis.Record] {
     func filter(by packages: [Analysis.Package]) -> Self {
-        let isIncluded = Set(packages.map(\.id))
-        return filter { isIncluded.contains($0.id) }
+        let isIncluded = Set(packages.map(\.url))
+        return filter { isIncluded.contains($0.url) }
     }
 
     func errorTotal() -> Int {
-        let grouped = Dictionary(grouping: self) { $0.id }
-        let maxErrors = grouped.keys.compactMap { grouped.maxErrors(packageId: $0) }
+        let grouped = Dictionary(grouping: self) { $0.url }
+        let maxErrors = grouped.keys.compactMap { grouped.maxErrors(url: $0) }
         return maxErrors.reduce(0, +)
     }
 
     func passingTotal() -> Int {
-        let grouped = Dictionary(grouping: self) { $0.id }
-        let passing = grouped.keys.filter { grouped.isPassing(packageId: $0) }
+        let grouped = Dictionary(grouping: self) { $0.url }
+        let passing = grouped.keys.filter { grouped.isPassing(url: $0) }
         return passing.count
     }
 }
@@ -118,16 +116,16 @@ extension Array<(id: String, name: String, packages: [Analysis.Package])> {
 }
 
 
-extension Dictionary<UUID, [Analysis.Record]> {
-    func maxErrors(packageId: UUID) -> Int? {
-        guard let records = self[packageId] else { return nil }
+extension Dictionary<URL, [Analysis.Record]> {
+    func maxErrors(url: URL) -> Int? {
+        guard let records = self[url] else { return nil }
         let errors = records.compactMap(\.swift6Errors).compactMap(Int.init)
         guard !errors.isEmpty else { return nil }
         return errors.max()
     }
 
-    func isPassing(packageId: UUID) -> Bool {
-        guard let records = self[packageId] else { return false }
+    func isPassing(url: URL) -> Bool {
+        guard let records = self[url] else { return false }
         let buildsWithoutErrors = records.compactMap(\.swift6Errors).compactMap(Int.init).filter { $0 == 0 }
         return buildsWithoutErrors.isEmpty == false
     }
