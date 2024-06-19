@@ -10,23 +10,21 @@ swift run spi-s6-preview-analysis analysis.json
 
 ### Package selection files
 
-Generated via queries
+Generated via queries on snapshot `spi_dev-2024-05-04.dump`.
 
 - all packages
 ```sql
 -- SELECT-ALL-01
 SELECT
-    p.id,
     r.last_commit_date::date AS last_commit,
-    'https://swiftpackageindex.com/' || r.owner || '/' || r.name AS spi_url
+    p.url
 FROM
-    packages p
-    INNER JOIN repositories r ON p.id = r.package_id
+    packages p JOIN repositories r ON p.id = r.package_id
 WHERE
     p.created_at < DATE '2024-03-19'
     AND r.last_commit_date > DATE '2023-03-19'
 ORDER BY
-    r.last_commit_date DESC
+    p.url
 ;
 ```
 
@@ -34,18 +32,16 @@ ORDER BY
 ```sql
 -- SELECT-APPLE-01
 SELECT
-    p.id,
     r.last_commit_date::date AS last_commit,
-    'https://swiftpackageindex.com/' || r.owner || '/' || r.name AS spi_url
+    p.url
 FROM
-    packages p
-    INNER JOIN repositories r ON p.id = r.package_id
+    packages p JOIN repositories r ON p.id = r.package_id
 WHERE
     p.created_at < DATE '2024-03-19'
     AND r.last_commit_date > DATE '2023-03-19'
     AND r.owner = 'apple'
 ORDER BY
-    r.last_commit_date DESC
+    p.url
 ;
 ```
 
@@ -53,17 +49,15 @@ ORDER BY
 ```sql
 -- SELECT-SSWG-01
 SELECT
-    p.id,
     r.last_commit_date::date AS last_commit,
-    'https://swiftpackageindex.com/' || r.owner || '/' || r.name AS spi_url
+    p.url
 FROM
-    packages p
-    INNER JOIN repositories r ON p.id = r.package_id
+    packages p JOIN repositories r ON p.id = r.package_id
 WHERE
     p.url in ('https://github.com/apple/swift-cassandra-client.git', 'https://github.com/apple/swift-crypto.git', 'https://github.com/apple/swift-distributed-actors.git', 'https://github.com/apple/swift-distributed-tracing.git', 'https://github.com/apple/swift-log.git', 'https://github.com/apple/swift-metrics.git', 'https://github.com/apple/swift-nio.git', 'https://github.com/apple/swift-openapi-generator.git', 'https://github.com/apple/swift-service-context.git', 'https://github.com/apple/swift-statsd-client.git', 'https://github.com/DiscordBM/DiscordBM.git', 'https://github.com/GraphQLSwift/Graphiti.git', 'https://github.com/GraphQLSwift/GraphQL.git', 'https://github.com/grpc/grpc-swift.git', 'https://github.com/hummingbird-project/hummingbird.git', 'https://github.com/lovetodream/oracle-nio.git', 'https://github.com/mattpolzin/OpenAPIKit.git', 'https://github.com/mongodb/mongo-swift-driver.git', 'https://github.com/orlandos-nl/MongoKitten.git', 'https://github.com/soto-project/soto.git', 'https://github.com/swift-server-community/APNSwift.git', 'https://github.com/swift-server-community/mqtt-nio.git', 'https://github.com/swift-server/async-http-client.git', 'https://github.com/swift-server/RediStack.git', 'https://github.com/swift-server/swift-aws-lambda-runtime.git', 'https://github.com/swift-server/swift-backtrace.git', 'https://github.com/swift-server/swift-prometheus.git', 'https://github.com/swift-server/swift-service-lifecycle.git', 'https://github.com/vapor/multipart-kit.git', 'https://github.com/vapor/postgres-nio.git', 'https://github.com/vapor/sqlite-nio.git', 'https://github.com/vapor/vapor.git')
     AND p.created_at < DATE '2024-03-19'
 ORDER BY
-    r.last_commit_date DESC
+    p.url
 ;
 ```
 
