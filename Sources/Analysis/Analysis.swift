@@ -93,13 +93,15 @@ extension [Analysis.Record] {
     }
 
     func errorTotal() -> Int {
-        let grouped = Dictionary(grouping: self) { $0.url }
+        let succeeded = filter { $0.status == .ok }
+        let grouped = Dictionary(grouping: succeeded) { $0.url }
         let maxErrors = grouped.keys.compactMap { grouped.maxErrors(url: $0) }
         return maxErrors.reduce(0, +)
     }
 
     func passingTotal() -> Int {
-        let grouped = Dictionary(grouping: self) { $0.url }
+        let succeeded = filter { $0.status == .ok }
+        let grouped = Dictionary(grouping: succeeded) { $0.url }
         let passing = grouped.keys.filter { grouped.isPassing(url: $0) }
         return passing.count
     }
