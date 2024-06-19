@@ -1,162 +1,130 @@
 [
-	{
-		"id": "546c04d4-199a-47c7-99d8-e6aae526bde6",
-		"last_commit": "2024-05-06",
-		"spi_url": "https://swiftpackageindex.com/hummingbird-project/hummingbird"
-	},
-	{
-		"id": "b64f5021-cc1a-425c-82a1-338edd7b2cfe",
-		"last_commit": "2024-05-04",
-		"spi_url": "https://swiftpackageindex.com/vapor/vapor"
-	},
-	{
-		"id": "2ff18e16-f1d3-4ce7-94a0-b65d762fb905",
-		"last_commit": "2024-05-03",
-		"spi_url": "https://swiftpackageindex.com/DiscordBM/DiscordBM"
-	},
-	{
-		"id": "209adcb8-8889-44cb-9004-419249e4e60c",
-		"last_commit": "2024-05-02",
-		"spi_url": "https://swiftpackageindex.com/grpc/grpc-swift"
-	},
-	{
-		"id": "63fb561a-fd61-4743-9288-bfd21b5e12ea",
-		"last_commit": "2024-05-01",
-		"spi_url": "https://swiftpackageindex.com/swift-server/async-http-client"
-	},
-	{
-		"id": "d422ecbb-5eef-45ab-a5de-8810b8180fc9",
-		"last_commit": "2024-05-01",
-		"spi_url": "https://swiftpackageindex.com/vapor/postgres-nio"
-	},
-	{
-		"id": "ff176096-5ee8-47cf-bde7-3dd13ac4b424",
-		"last_commit": "2024-05-01",
-		"spi_url": "https://swiftpackageindex.com/lovetodream/oracle-nio"
-	},
-	{
-		"id": "25661d74-c9f2-4cc7-8dc1-d680a47a2c96",
-		"last_commit": "2024-04-29",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-nio"
-	},
-	{
-		"id": "9d71d60a-d441-4a3c-a5f4-478d43c5c8df",
-		"last_commit": "2024-04-26",
-		"spi_url": "https://swiftpackageindex.com/swift-server/swift-service-lifecycle"
-	},
-	{
-		"id": "704d7083-8545-400f-a968-5881340a52c1",
-		"last_commit": "2024-04-23",
-		"spi_url": "https://swiftpackageindex.com/soto-project/soto"
-	},
-	{
-		"id": "2d627871-f4b0-4382-9a8a-510e8b0a1f19",
-		"last_commit": "2024-04-21",
-		"spi_url": "https://swiftpackageindex.com/mattpolzin/OpenAPIKit"
-	},
-	{
-		"id": "718e308b-8df8-4fed-848a-3bee22c9dfe5",
-		"last_commit": "2024-04-16",
-		"spi_url": "https://swiftpackageindex.com/swift-server-community/mqtt-nio"
-	},
-	{
-		"id": "5dc66b2b-bb1f-448b-9923-ffe0def8917f",
-		"last_commit": "2024-04-16",
-		"spi_url": "https://swiftpackageindex.com/swift-server-community/APNSwift"
-	},
-	{
-		"id": "ac0c4589-edfd-4996-b98f-c1b003440ec0",
-		"last_commit": "2024-04-16",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-openapi-generator"
-	},
-	{
-		"id": "068b0e2a-4102-4a1a-a941-f13faf681d24",
-		"last_commit": "2024-04-15",
-		"spi_url": "https://swiftpackageindex.com/vapor/sqlite-nio"
-	},
-	{
-		"id": "2f898fde-a79e-4be5-8db5-ca9e9ede5232",
-		"last_commit": "2024-04-07",
-		"spi_url": "https://swiftpackageindex.com/orlandos-nl/MongoKitten"
-	},
-	{
-		"id": "bfe9cccf-e7cc-4622-8bd0-b55d7ea26772",
-		"last_commit": "2024-04-03",
-		"spi_url": "https://swiftpackageindex.com/GraphQLSwift/Graphiti"
-	},
-	{
-		"id": "d0fb71b6-1d3a-4dba-8fd8-69eb346d148b",
-		"last_commit": "2024-04-01",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-distributed-tracing"
-	},
-	{
-		"id": "2e5db14b-8283-465a-bcff-80397dae4ab4",
-		"last_commit": "2024-03-30",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-service-context"
-	},
-	{
-		"id": "768bd5ab-4868-4240-a5c7-5230f834860f",
-		"last_commit": "2024-03-29",
-		"spi_url": "https://swiftpackageindex.com/swift-server/swift-prometheus"
-	},
-	{
-		"id": "a8238958-fc7b-4c41-84d9-8f49f86759fc",
-		"last_commit": "2024-03-26",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-crypto"
-	},
-	{
-		"id": "4dfc05a9-a36c-49d1-9d1f-a5316ada8f17",
-		"last_commit": "2024-03-21",
-		"spi_url": "https://swiftpackageindex.com/GraphQLSwift/GraphQL"
-	},
-	{
-		"id": "887f0da9-96f3-4d44-a3b4-4bae10b6b02b",
-		"last_commit": "2024-03-11",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-distributed-actors"
-	},
-	{
-		"id": "26604af3-0a9f-4a0a-81cd-eee16faad70b",
-		"last_commit": "2024-02-28",
-		"spi_url": "https://swiftpackageindex.com/swift-server/swift-aws-lambda-runtime"
-	},
-	{
-		"id": "2a747b8c-f839-40c1-aee4-99d938a1e7a6",
-		"last_commit": "2024-02-07",
-		"spi_url": "https://swiftpackageindex.com/swift-server/RediStack"
-	},
-	{
-		"id": "d9cc46f1-128c-4311-b4ad-22496a030bfb",
-		"last_commit": "2024-01-23",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-statsd-client"
-	},
-	{
-		"id": "0099ef67-99c9-427f-aa39-6a3002d05ede",
-		"last_commit": "2024-01-23",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-metrics"
-	},
-	{
-		"id": "cc762081-4890-407b-aa94-6e4efd3c3a6f",
-		"last_commit": "2024-01-23",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-log"
-	},
-	{
-		"id": "e11cc6fd-70aa-49cb-b482-660c94713bd9",
-		"last_commit": "2024-01-22",
-		"spi_url": "https://swiftpackageindex.com/apple/swift-cassandra-client"
-	},
-	{
-		"id": "1ca6785f-0373-42bf-912c-0a49dc5dd4df",
-		"last_commit": "2024-01-18",
-		"spi_url": "https://swiftpackageindex.com/vapor/multipart-kit"
-	},
-	{
-		"id": "24a582b0-2c7b-4243-acb2-f121ffd9696a",
-		"last_commit": "2023-09-05",
-		"spi_url": "https://swiftpackageindex.com/swift-server/swift-backtrace"
-	},
-	{
-		"id": "48b5fc4f-71b1-4085-907b-18fb460a1a42",
-		"last_commit": "2023-08-28",
-		"spi_url": "https://swiftpackageindex.com/mongodb/mongo-swift-driver"
-	}
+  {
+    "last_commit" : "2024-05-03",
+    "url" : "https://swiftpackageindex.com/DiscordBM/DiscordBM"
+  },
+  {
+    "last_commit" : "2024-03-21",
+    "url" : "https://swiftpackageindex.com/GraphQLSwift/GraphQL"
+  },
+  {
+    "last_commit" : "2024-04-03",
+    "url" : "https://swiftpackageindex.com/GraphQLSwift/Graphiti"
+  },
+  {
+    "last_commit" : "2024-01-22",
+    "url" : "https://swiftpackageindex.com/apple/swift-cassandra-client"
+  },
+  {
+    "last_commit" : "2024-03-26",
+    "url" : "https://swiftpackageindex.com/apple/swift-crypto"
+  },
+  {
+    "last_commit" : "2024-03-11",
+    "url" : "https://swiftpackageindex.com/apple/swift-distributed-actors"
+  },
+  {
+    "last_commit" : "2024-04-01",
+    "url" : "https://swiftpackageindex.com/apple/swift-distributed-tracing"
+  },
+  {
+    "last_commit" : "2024-01-23",
+    "url" : "https://swiftpackageindex.com/apple/swift-log"
+  },
+  {
+    "last_commit" : "2024-01-23",
+    "url" : "https://swiftpackageindex.com/apple/swift-metrics"
+  },
+  {
+    "last_commit" : "2024-04-29",
+    "url" : "https://swiftpackageindex.com/apple/swift-nio"
+  },
+  {
+    "last_commit" : "2024-04-16",
+    "url" : "https://swiftpackageindex.com/apple/swift-openapi-generator"
+  },
+  {
+    "last_commit" : "2024-03-30",
+    "url" : "https://swiftpackageindex.com/apple/swift-service-context"
+  },
+  {
+    "last_commit" : "2024-01-23",
+    "url" : "https://swiftpackageindex.com/apple/swift-statsd-client"
+  },
+  {
+    "last_commit" : "2024-05-02",
+    "url" : "https://swiftpackageindex.com/grpc/grpc-swift"
+  },
+  {
+    "last_commit" : "2024-05-06",
+    "url" : "https://swiftpackageindex.com/hummingbird-project/hummingbird"
+  },
+  {
+    "last_commit" : "2024-05-01",
+    "url" : "https://swiftpackageindex.com/lovetodream/oracle-nio"
+  },
+  {
+    "last_commit" : "2024-04-21",
+    "url" : "https://swiftpackageindex.com/mattpolzin/OpenAPIKit"
+  },
+  {
+    "last_commit" : "2023-08-28",
+    "url" : "https://swiftpackageindex.com/mongodb/mongo-swift-driver"
+  },
+  {
+    "last_commit" : "2024-04-07",
+    "url" : "https://swiftpackageindex.com/orlandos-nl/MongoKitten"
+  },
+  {
+    "last_commit" : "2024-04-23",
+    "url" : "https://swiftpackageindex.com/soto-project/soto"
+  },
+  {
+    "last_commit" : "2024-04-16",
+    "url" : "https://swiftpackageindex.com/swift-server-community/APNSwift"
+  },
+  {
+    "last_commit" : "2024-04-16",
+    "url" : "https://swiftpackageindex.com/swift-server-community/mqtt-nio"
+  },
+  {
+    "last_commit" : "2024-02-07",
+    "url" : "https://swiftpackageindex.com/swift-server/RediStack"
+  },
+  {
+    "last_commit" : "2024-05-01",
+    "url" : "https://swiftpackageindex.com/swift-server/async-http-client"
+  },
+  {
+    "last_commit" : "2024-02-28",
+    "url" : "https://swiftpackageindex.com/swift-server/swift-aws-lambda-runtime"
+  },
+  {
+    "last_commit" : "2023-09-05",
+    "url" : "https://swiftpackageindex.com/swift-server/swift-backtrace"
+  },
+  {
+    "last_commit" : "2024-03-29",
+    "url" : "https://swiftpackageindex.com/swift-server/swift-prometheus"
+  },
+  {
+    "last_commit" : "2024-04-26",
+    "url" : "https://swiftpackageindex.com/swift-server/swift-service-lifecycle"
+  },
+  {
+    "last_commit" : "2024-01-18",
+    "url" : "https://swiftpackageindex.com/vapor/multipart-kit"
+  },
+  {
+    "last_commit" : "2024-05-01",
+    "url" : "https://swiftpackageindex.com/vapor/postgres-nio"
+  },
+  {
+    "last_commit" : "2024-04-15",
+    "url" : "https://swiftpackageindex.com/vapor/sqlite-nio"
+  },
+  {
+    "last_commit" : "2024-05-04",
+    "url" : "https://swiftpackageindex.com/vapor/vapor"
+  }
 ]
