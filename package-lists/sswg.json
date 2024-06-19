@@ -1,130 +1,130 @@
 [
-  {
-    "last_commit" : "2024-05-03",
-    "url" : "https://swiftpackageindex.com/DiscordBM/DiscordBM"
-  },
-  {
-    "last_commit" : "2024-03-21",
-    "url" : "https://swiftpackageindex.com/GraphQLSwift/GraphQL"
-  },
-  {
-    "last_commit" : "2024-04-03",
-    "url" : "https://swiftpackageindex.com/GraphQLSwift/Graphiti"
-  },
-  {
-    "last_commit" : "2024-01-22",
-    "url" : "https://swiftpackageindex.com/apple/swift-cassandra-client"
-  },
-  {
-    "last_commit" : "2024-03-26",
-    "url" : "https://swiftpackageindex.com/apple/swift-crypto"
-  },
-  {
-    "last_commit" : "2024-03-11",
-    "url" : "https://swiftpackageindex.com/apple/swift-distributed-actors"
-  },
-  {
-    "last_commit" : "2024-04-01",
-    "url" : "https://swiftpackageindex.com/apple/swift-distributed-tracing"
-  },
-  {
-    "last_commit" : "2024-01-23",
-    "url" : "https://swiftpackageindex.com/apple/swift-log"
-  },
-  {
-    "last_commit" : "2024-01-23",
-    "url" : "https://swiftpackageindex.com/apple/swift-metrics"
-  },
-  {
-    "last_commit" : "2024-04-29",
-    "url" : "https://swiftpackageindex.com/apple/swift-nio"
-  },
-  {
-    "last_commit" : "2024-04-16",
-    "url" : "https://swiftpackageindex.com/apple/swift-openapi-generator"
-  },
-  {
-    "last_commit" : "2024-03-30",
-    "url" : "https://swiftpackageindex.com/apple/swift-service-context"
-  },
-  {
-    "last_commit" : "2024-01-23",
-    "url" : "https://swiftpackageindex.com/apple/swift-statsd-client"
-  },
-  {
-    "last_commit" : "2024-05-02",
-    "url" : "https://swiftpackageindex.com/grpc/grpc-swift"
-  },
-  {
-    "last_commit" : "2024-05-06",
-    "url" : "https://swiftpackageindex.com/hummingbird-project/hummingbird"
-  },
-  {
-    "last_commit" : "2024-05-01",
-    "url" : "https://swiftpackageindex.com/lovetodream/oracle-nio"
-  },
-  {
-    "last_commit" : "2024-04-21",
-    "url" : "https://swiftpackageindex.com/mattpolzin/OpenAPIKit"
-  },
-  {
-    "last_commit" : "2023-08-28",
-    "url" : "https://swiftpackageindex.com/mongodb/mongo-swift-driver"
-  },
-  {
-    "last_commit" : "2024-04-07",
-    "url" : "https://swiftpackageindex.com/orlandos-nl/MongoKitten"
-  },
-  {
-    "last_commit" : "2024-04-23",
-    "url" : "https://swiftpackageindex.com/soto-project/soto"
-  },
-  {
-    "last_commit" : "2024-04-16",
-    "url" : "https://swiftpackageindex.com/swift-server-community/APNSwift"
-  },
-  {
-    "last_commit" : "2024-04-16",
-    "url" : "https://swiftpackageindex.com/swift-server-community/mqtt-nio"
-  },
-  {
-    "last_commit" : "2024-02-07",
-    "url" : "https://swiftpackageindex.com/swift-server/RediStack"
-  },
-  {
-    "last_commit" : "2024-05-01",
-    "url" : "https://swiftpackageindex.com/swift-server/async-http-client"
-  },
-  {
-    "last_commit" : "2024-02-28",
-    "url" : "https://swiftpackageindex.com/swift-server/swift-aws-lambda-runtime"
-  },
-  {
-    "last_commit" : "2023-09-05",
-    "url" : "https://swiftpackageindex.com/swift-server/swift-backtrace"
-  },
-  {
-    "last_commit" : "2024-03-29",
-    "url" : "https://swiftpackageindex.com/swift-server/swift-prometheus"
-  },
-  {
-    "last_commit" : "2024-04-26",
-    "url" : "https://swiftpackageindex.com/swift-server/swift-service-lifecycle"
-  },
-  {
-    "last_commit" : "2024-01-18",
-    "url" : "https://swiftpackageindex.com/vapor/multipart-kit"
-  },
-  {
-    "last_commit" : "2024-05-01",
-    "url" : "https://swiftpackageindex.com/vapor/postgres-nio"
-  },
-  {
-    "last_commit" : "2024-04-15",
-    "url" : "https://swiftpackageindex.com/vapor/sqlite-nio"
-  },
-  {
-    "last_commit" : "2024-05-04",
-    "url" : "https://swiftpackageindex.com/vapor/vapor"
-  }
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/DiscordBM/DiscordBM.git"
+	},
+	{
+		"last_commit": "2024-03-21",
+		"url": "https://github.com/GraphQLSwift/GraphQL.git"
+	},
+	{
+		"last_commit": "2024-04-03",
+		"url": "https://github.com/GraphQLSwift/Graphiti.git"
+	},
+	{
+		"last_commit": "2024-01-22",
+		"url": "https://github.com/apple/swift-cassandra-client.git"
+	},
+	{
+		"last_commit": "2024-03-26",
+		"url": "https://github.com/apple/swift-crypto.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/apple/swift-distributed-actors.git"
+	},
+	{
+		"last_commit": "2024-04-01",
+		"url": "https://github.com/apple/swift-distributed-tracing.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/apple/swift-log.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/apple/swift-metrics.git"
+	},
+	{
+		"last_commit": "2024-04-29",
+		"url": "https://github.com/apple/swift-nio.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/apple/swift-openapi-generator.git"
+	},
+	{
+		"last_commit": "2024-03-30",
+		"url": "https://github.com/apple/swift-service-context.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/apple/swift-statsd-client.git"
+	},
+	{
+		"last_commit": "2024-05-02",
+		"url": "https://github.com/grpc/grpc-swift.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/hummingbird-project/hummingbird.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/lovetodream/oracle-nio.git"
+	},
+	{
+		"last_commit": "2024-04-21",
+		"url": "https://github.com/mattpolzin/OpenAPIKit.git"
+	},
+	{
+		"last_commit": "2023-08-28",
+		"url": "https://github.com/mongodb/mongo-swift-driver.git"
+	},
+	{
+		"last_commit": "2024-04-07",
+		"url": "https://github.com/orlandos-nl/MongoKitten.git"
+	},
+	{
+		"last_commit": "2024-04-23",
+		"url": "https://github.com/soto-project/soto.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/swift-server-community/APNSwift.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/swift-server-community/mqtt-nio.git"
+	},
+	{
+		"last_commit": "2024-02-07",
+		"url": "https://github.com/swift-server/RediStack.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/swift-server/async-http-client.git"
+	},
+	{
+		"last_commit": "2024-02-28",
+		"url": "https://github.com/swift-server/swift-aws-lambda-runtime.git"
+	},
+	{
+		"last_commit": "2023-09-05",
+		"url": "https://github.com/swift-server/swift-backtrace.git"
+	},
+	{
+		"last_commit": "2024-03-29",
+		"url": "https://github.com/swift-server/swift-prometheus.git"
+	},
+	{
+		"last_commit": "2024-04-26",
+		"url": "https://github.com/swift-server/swift-service-lifecycle.git"
+	},
+	{
+		"last_commit": "2024-01-18",
+		"url": "https://github.com/vapor/multipart-kit.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/vapor/postgres-nio.git"
+	},
+	{
+		"last_commit": "2024-04-15",
+		"url": "https://github.com/vapor/sqlite-nio.git"
+	},
+	{
+		"last_commit": "2024-04-30",
+		"url": "https://github.com/vapor/vapor.git"
+	}
 ]
