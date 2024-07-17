@@ -23,7 +23,10 @@ struct S6Analysis: ParsableCommand {
                 guard let packageList = packageLists[id: listId] else {
                     fatalError("Package list '\(listId)' not found")
                 }
-                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageList.packages.count, values: [])
+                // The Apple list contains duplicates - both /apple/... and /swiftlang/... urls - to deal with the ongoing
+                // transition of repositories from the apple to the swiftlang Github org.
+                let packageCount = listId == "apple" ? packageList.packages.count / 2 : packageList.packages.count
+                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageCount, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
                     let selectedResults = results.filter(by: packageList.packages)
@@ -52,7 +55,10 @@ struct S6Analysis: ParsableCommand {
                 guard let packageList = packageLists[id: listId] else {
                     fatalError("Package list '\(listId)' not found")
                 }
-                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageList.packages.count, values: [])
+                // The Apple list contains duplicates - both /apple/... and /swiftlang/... urls - to deal with the ongoing
+                // transition of repositories from the apple to the swiftlang Github org.
+                let packageCount = listId == "apple" ? packageList.packages.count / 2 : packageList.packages.count
+                var output = Analysis.Output(id: packageList.id, name: packageList.name, total: packageCount, values: [])
                 for (run, results) in records {
                     print("date:", run.date, results.count)
                     let selectedResults = results.filter(by: packageList.packages)
