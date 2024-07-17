@@ -258,5 +258,265 @@
 	{
 		"last_commit": "2024-04-26",
 		"url": "https://github.com/apple/swift-tools-support-core.git"
-	}
+	},
+	{
+		"last_commit": "2023-04-01",
+		"url": "https://github.com/swiftlang/FHIRModels.git"
+	},
+	{
+		"last_commit": "2024-04-27",
+		"url": "https://github.com/swiftlang/app-store-server-library-swift.git"
+	},
+	{
+		"last_commit": "2023-08-22",
+		"url": "https://github.com/swiftlang/example-package-figlet.git"
+	},
+	{
+		"last_commit": "2024-04-23",
+		"url": "https://github.com/swiftlang/indexstore-db.git"
+	},
+	{
+		"last_commit": "2024-05-04",
+		"url": "https://github.com/swiftlang/ml-stable-diffusion.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/pkl-swift.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/sourcekit-lsp.git"
+	},
+	{
+		"last_commit": "2024-03-09",
+		"url": "https://github.com/swiftlang/swift-algorithms.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/swiftlang/swift-argument-parser.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/swiftlang/swift-asn1.git"
+	},
+	{
+		"last_commit": "2024-04-10",
+		"url": "https://github.com/swiftlang/swift-async-algorithms.git"
+	},
+	{
+		"last_commit": "2024-03-06",
+		"url": "https://github.com/swiftlang/swift-async-dns-resolver.git"
+	},
+	{
+		"last_commit": "2023-12-15",
+		"url": "https://github.com/swiftlang/swift-atomics.git"
+	},
+	{
+		"last_commit": "2024-01-22",
+		"url": "https://github.com/swiftlang/swift-cassandra-client.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/swiftlang/swift-certificates.git"
+	},
+	{
+		"last_commit": "2023-06-06",
+		"url": "https://github.com/swiftlang/swift-cluster-membership.git"
+	},
+	{
+		"last_commit": "2024-01-31",
+		"url": "https://github.com/swiftlang/swift-cmark.git"
+	},
+	{
+		"last_commit": "2024-03-22",
+		"url": "https://github.com/swiftlang/swift-collections-benchmark.git"
+	},
+	{
+		"last_commit": "2024-04-19",
+		"url": "https://github.com/swiftlang/swift-collections.git"
+	},
+	{
+		"last_commit": "2024-03-13",
+		"url": "https://github.com/swiftlang/swift-corelibs-xctest.git"
+	},
+	{
+		"last_commit": "2024-03-26",
+		"url": "https://github.com/swiftlang/swift-crypto.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/swiftlang/swift-distributed-actors.git"
+	},
+	{
+		"last_commit": "2023-04-05",
+		"url": "https://github.com/swiftlang/swift-distributed-tracing-baggage-core.git"
+	},
+	{
+		"last_commit": "2024-04-01",
+		"url": "https://github.com/swiftlang/swift-distributed-tracing.git"
+	},
+	{
+		"last_commit": "2023-07-29",
+		"url": "https://github.com/swiftlang/swift-docc-plugin.git"
+	},
+	{
+		"last_commit": "2024-03-15",
+		"url": "https://github.com/swiftlang/swift-docc-symbolkit.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-docc.git"
+	},
+	{
+		"last_commit": "2024-05-02",
+		"url": "https://github.com/swiftlang/swift-driver.git"
+	},
+	{
+		"last_commit": "2024-05-02",
+		"url": "https://github.com/swiftlang/swift-format.git"
+	},
+	{
+		"last_commit": "2024-03-30",
+		"url": "https://github.com/swiftlang/swift-foundation-icu.git"
+	},
+	{
+		"last_commit": "2024-05-04",
+		"url": "https://github.com/swiftlang/swift-foundation.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/swiftlang/swift-http-structured-headers.git"
+	},
+	{
+		"last_commit": "2024-02-01",
+		"url": "https://github.com/swiftlang/swift-http-types.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-llbuild.git"
+	},
+	{
+		"last_commit": "2023-11-08",
+		"url": "https://github.com/swiftlang/swift-llbuild2.git"
+	},
+	{
+		"last_commit": "2023-12-13",
+		"url": "https://github.com/swiftlang/swift-lmdb.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/swiftlang/swift-log.git"
+	},
+	{
+		"last_commit": "2024-04-22",
+		"url": "https://github.com/swiftlang/swift-markdown.git"
+	},
+	{
+		"last_commit": "2023-07-26",
+		"url": "https://github.com/swiftlang/swift-metrics-extras.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/swiftlang/swift-metrics.git"
+	},
+	{
+		"last_commit": "2024-04-29",
+		"url": "https://github.com/swiftlang/swift-mmio.git"
+	},
+	{
+		"last_commit": "2024-03-26",
+		"url": "https://github.com/swiftlang/swift-nio-extras.git"
+	},
+	{
+		"last_commit": "2024-04-17",
+		"url": "https://github.com/swiftlang/swift-nio-http2.git"
+	},
+	{
+		"last_commit": "2024-04-20",
+		"url": "https://github.com/swiftlang/swift-nio-imap.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/swiftlang/swift-nio-ssh.git"
+	},
+	{
+		"last_commit": "2024-05-01",
+		"url": "https://github.com/swiftlang/swift-nio-ssl.git"
+	},
+	{
+		"last_commit": "2024-03-11",
+		"url": "https://github.com/swiftlang/swift-nio-transport-services.git"
+	},
+	{
+		"last_commit": "2024-04-29",
+		"url": "https://github.com/swiftlang/swift-nio.git"
+	},
+	{
+		"last_commit": "2024-04-20",
+		"url": "https://github.com/swiftlang/swift-numerics.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/swiftlang/swift-openapi-generator.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/swiftlang/swift-openapi-runtime.git"
+	},
+	{
+		"last_commit": "2024-04-16",
+		"url": "https://github.com/swiftlang/swift-openapi-urlsession.git"
+	},
+	{
+		"last_commit": "2024-03-15",
+		"url": "https://github.com/swiftlang/swift-package-collection-generator.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-package-manager.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-playdate-examples.git"
+	},
+	{
+		"last_commit": "2024-05-02",
+		"url": "https://github.com/swiftlang/swift-protobuf.git"
+	},
+	{
+		"last_commit": "2024-04-25",
+		"url": "https://github.com/swiftlang/swift-sdk-generator.git"
+	},
+	{
+		"last_commit": "2024-03-30",
+		"url": "https://github.com/swiftlang/swift-service-context.git"
+	},
+	{
+		"last_commit": "2024-02-07",
+		"url": "https://github.com/swiftlang/swift-service-discovery.git"
+	},
+	{
+		"last_commit": "2024-01-23",
+		"url": "https://github.com/swiftlang/swift-statsd-client.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-syntax.git"
+	},
+	{
+		"last_commit": "2024-04-30",
+		"url": "https://github.com/swiftlang/swift-system.git"
+	},
+	{
+		"last_commit": "2024-05-03",
+		"url": "https://github.com/swiftlang/swift-testing.git"
+	},
+	{
+		"last_commit": "2024-02-21",
+		"url": "https://github.com/swiftlang/swift-tools-support-async.git"
+	},
+	{
+		"last_commit": "2024-04-26",
+		"url": "https://github.com/swiftlang/swift-tools-support-core.git"
+	},
 ]
