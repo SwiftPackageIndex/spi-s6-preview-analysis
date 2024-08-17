@@ -59,5 +59,11 @@
       "toolchain_id": "com.apple.dt.Xcode",
       "toolchain_label": "Swift 6.0 Xcode 16.0 beta 4 (16A5211f)"
     },
+    {
+      "date": "2024-08-17",
+      "file_name": "results/spi_prod-2024-08-17.json",
+      "toolchain_id": "com.apple.dt.Xcode",
+      "toolchain_label": "Swift 6.0 Xcode 16.0 beta 5 (16A5221g)"
+    },
   ]
 }
