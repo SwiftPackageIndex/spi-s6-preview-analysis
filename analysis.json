@@ -77,5 +77,11 @@
       "toolchain_id": "com.apple.dt.Xcode",
       "toolchain_label": "Swift 6.0 Xcode 16.0 RC (16A242)"
     },
+    {
+      "date": "2024-10-15",
+      "file_name": "results/spi_prod-2024-10-15.json",
+      "toolchain_id": "com.apple.dt.Xcode",
+      "toolchain_label": "Swift 6.0 Xcode 16.0 (16A242d)"
+    },
   ]
 }
