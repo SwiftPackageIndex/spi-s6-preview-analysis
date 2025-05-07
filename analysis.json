@@ -95,5 +95,11 @@
       "toolchain_id": "com.apple.dt.Xcode",
       "toolchain_label": "Swift 6.0 Xcode 16.1 (16B40)"
     },
+    {
+      "date": "2025-05-07",
+      "file_name": "results/spi_prod-2025-05-07.json",
+      "toolchain_id": "com.apple.dt.Xcode",
+      "toolchain_label": "Swift 6.1 Xcode 16.3 (16E140)"
+    },
   ]
 }
