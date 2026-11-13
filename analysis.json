@@ -101,5 +101,11 @@
       "toolchain_id": "com.apple.dt.Xcode",
       "toolchain_label": "Swift 6.1 Xcode 16.3 (16E140)"
     },
+    {
+      "date": "2026-11-12",
+      "file_name": "results/spi_prod-2026-11-12.json",
+      "toolchain_id": "com.apple.dt.Xcode",
+      "toolchain_label": "Swift 6.4 Version 27.0 (27A266a)"
+    },
   ]
 }
